@@ -28,7 +28,7 @@ Paper describing the theory can be found [here](http://arxiv.org/abs/1711.03449)
 
 1. Start Julia in terminal
 
-2. Delete the 'hold on' line in plotTraj.jl, because it's obsolete.
+2. Delete 'hold(1)' and 'hold(0)' in plotTraj.jl, because it's obsolete in new Pyplot.
 
 2. Type in terminal: include("setup.jl")
 
