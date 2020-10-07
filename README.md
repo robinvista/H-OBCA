@@ -4,9 +4,7 @@ Hierarchical Optimization-Based Collision Avoidance - An algorithm for generatin
 Paper describing the theory can be found [here](http://arxiv.org/abs/1711.03449).
 
 ## Short Description
-H-OBCA is an optimization-based  approach  for autonomous  parking. It builds on [OBCA](https://github.com/XiaojingGeorgeZhang/OBCA), which is a recent method for generating obstacle-free trajectories using optimal control.
-
-H-OBCA is able to generate high-quality *kino-dynamically feasible obstacle-free* trajectories. These trajectories are smooth, and can be accurately tracked by simple low-level path following controllers. A [Julia](https://julialang.org/)-based implementation is provided.
+H-OBCA is an optimization-based  approach  for autonomous  parking. It builds on [OBCA](https://github.com/XiaojingGeorgeZhang/OBCA), which is a recent method for generating obstacle-free trajectories using optimal control. H-OBCA is able to generate high-quality *kino-dynamically feasible obstacle-free* trajectories. These trajectories are smooth, and can be accurately tracked by simple low-level path following controllers. A [Julia](https://julialang.org/)-based implementation is provided.
 
 
 ## Examples
@@ -17,16 +15,15 @@ H-OBCA is able to generate high-quality *kino-dynamically feasible obstacle-free
 ### H-OBCA for Parallel Parking
 <img src="https://github.com/XiaojingGeorgeZhang/H-OBCA/blob/master/images/TrajParallelHOBCA.gif" width="700" />
 
-
 ## How to run the Parking code:
 
-### First steps
+### Prepare Julia Environment
 
-1. Change to the directory
+1. Install Julia from https://julialang.org/downloads/ (code tested on version 0.5.1 and 0.6.0) I use Julia-0.6.4 version,which can install the Packages successfully.
 
-2. Install Julia from https://julialang.org/downloads/ (code tested on version 0.5.1 and 0.6.0) 
+2. Open Julia in terminal
 
-3. Open Julia in terminal
+3. Change to the directory: cd("C:\\Users\\Administrator\\Desktop\\OBCA-master\\AutonomousParking")
 
 4. Install Julia package JuMP using Pkg.add("JuMP")
 
@@ -38,7 +35,6 @@ H-OBCA is able to generate high-quality *kino-dynamically feasible obstacle-free
 
 8. Install Julia package ControlSystems using Pkg.add("ControlSystems")
 
-
 ### Running the parking example 
 
 1. Start Julia in terminal
@@ -46,7 +42,6 @@ H-OBCA is able to generate high-quality *kino-dynamically feasible obstacle-free
 2. Type in terminal: include("setup.jl")
 
 3. Type in terminal: include("main.jl")
-
 
 ### modifying the code 
 
@@ -59,8 +54,3 @@ include("setup.jl")
 
 3. If you change the size of the car in main.jl, the change 
 also need to be made in collision_check.jl
-
-### Note
-1. this code has been tested on Julia 0.5.1 and 0.6.0, and might not run on any other Julia versions
-
-2. For best results, run code in Julia terminal
