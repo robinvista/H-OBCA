@@ -2,8 +2,6 @@
 Hierarchical Optimization-Based Collision Avoidance - An algorithm for generating dynamically feasible parking trajectories 
 Paper describing the theory can be found [here](http://arxiv.org/abs/1711.03449).
 
-
-
 ## How to run the Parking code:
 
 ### Prepare Julia Environment
@@ -45,4 +43,14 @@ include("setup.jl")
 
 3. If you change the size of the car in main.jl, the change 
 also need to be made in collision_check.jl
+
+## 关于初始化
+
+我尝试了几种情况：
+
+1. 不使用混合A星，直接用Reeds-shepp曲线初始化，即初始路径不考虑障碍物，结果是优化后的路径与障碍物碰撞。
+
+2. 
+
+
 
