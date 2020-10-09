@@ -8,7 +8,7 @@ Paper describing the theory can be found [here](http://arxiv.org/abs/1711.03449)
 
 1. Install Julia from https://julialang.org/downloads/ (code tested on version 0.5.1 and 0.6.0) I use Julia-0.6.4 version,which can install the Packages successfully.
 2. Open Julia in terminal
-3. Change to the directory: cd("C:\\Users\\Administrator\\Desktop\\OBCA-master\\AutonomousParking")
+3. Change to the directory: ‘cd("C:\\Users\\Administrator\\Desktop\\OBCA-master\\AutonomousParking")’
 4. Install Julia package JuMP using Pkg.add("JuMP")
 5. Install Julia package Ipopt using Pkg.add("Ipopt")
 6. Install Julia package PyPlot using Pkg.add("PyPlot")
